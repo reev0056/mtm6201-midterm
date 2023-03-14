@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <nav role="navigation" aria-label="Main Navigation">
+        <!-- The 'role' attribute specifies the landmark role of the element.
+             The 'aria-label' attribute provides a label for the landmark. -->
+        <div class="wrapper"></div>
+        <ul role="menu">
+            <!-- The 'role' attribute specifies the role of the element.
+                 In this case, the 'menu' role is used to indicate a list of menu items. -->
+            <li role="menuitem">
+                <a href="index.html" aria-current="page">HOME</a>
+                <!-- The 'role' attribute specifies the role of the element.
+                     In this case, the 'menuitem' role is used to indicate a menu item.
+                     The 'aria-current' attribute is used to indicate the current page. -->
+            </li>
+            <li role="menuitem"><a href="about.html">ABOUT</a></li>
+            <li role="menuitem"><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div role="heading" aria-level="1">
+            <!-- The 'role' attribute specifies the role of the element.
+                 In this case, the 'heading' role is used to indicate a heading element.
+                 The 'aria-level' attribute is used to indicate the level of the heading. -->
+    <!-- The heading identifies the purpose of the form -->
+<h1 id="contact-heading">Contact Us</h1>
+
+<!-- The form element groups together the form controls -->
+<form aria-labelledby="contact-heading">
+
+  <!-- The label and input elements are associated using the "for" attribute -->
+  <label for="name-input">Name</label>
+  <input id="name-input" name="name" type="text" class="feedback-input" placeholder="Name" />
+
+  <label for="email-input">Email</label>
+  <input id="email-input" name="email" type="text" class="feedback-input" placeholder="Email" />
+
+  <label for="comment-input">Comment</label>
+  <textarea id="comment-input" name="text" class="feedback-input" placeholder="Comment"></textarea>
+
+  <!-- The button element has a type of "submit" to submit the form when clicked -->
+  <button type="submit" aria-label="Submit form">SUBMIT</button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* Set the background color for the entire page to lightpink */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24pt;
+    background-color: lightpink;
+}
+
+/* Set the font size for all paragraphs to 18pt */
+p{
+    font-size: 18pt;
+}
+
+/* Center the wrapper div and set its width to 1000px. Set its background color to rgb(250, 247, 222) and add padding to the top, left, and right */
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: rgb(250, 247, 222);
+    padding-top: 0.1px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/* Style the navigation bar. Set the list style to none, background color to white, add a black border, center the text, and remove padding and margin */
+nav ul{
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Display the navigation items inline */
+nav li{
+    display: inline-block;
+}
+
+/* Style the links in the navigation. Set the text decoration to none and width to 100px. Display the links as blocks and add padding */
+nav a{
+    text-decoration: none;
+    width: 100px;
+    display: block;
+    padding: 40px;
+}
+
+/* Style the links in the navigation when they are not visited. Set the color to black and remove text decoration */
+a:link, a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Style the links in the navigation when they are hovered or active. Remove text decoration and set color to black */
+a:hover, a:active {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Set the width of all images to 90% and center them */
+img{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+/* Style for small images on the homepage. Set the width to 33%, display them as flex items, add margin and padding to the left */
+.small-img {
+    width: 33%;
+    display: flex;
+    margin: 10px;
+    padding-left: 17px;
+}
+
+/* Align the header text to the right */
+.header-text {
+    text-align: right;
+}
+
+/* Style for floating images on the homepage. Set the width to 50% and float to the left */
+.float-img {
+    width: 50%;
+    float: left;
+}
+
+/* Style for the 'Order Here' button. Set the font family, width, background color, border radius, cursor, color, font size, padding, and transition. Set negative margin top and font weight */
+.order-here {
+    font-family:'Times New Roman', Times, serif;
+    width: 20%;
+    background:#a32c64;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:rgb(255, 255, 255);
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:300;
+}
+.order-here:hover { background:#ff9688; }
+
+
+ /* About Page */
+
+.card-container {
+    /* Sets the display to grid and defines the grid template to have columns that will adjust to fit the container, with a minimum width of 300px and a maximum width of 1fr */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .card {
+    /* Styles for the cards inside the card container, including width, margin, padding, border, border-radius, and box shadow */
+    width: 280px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    /* Styles for the image inside the card, including width, height, and border-radius */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card h2 {
+    /* Styles for the heading inside the card, including font size and margin top */
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Contact Page */
+  
+  .feedback-input {
+    /* Styles for the input fields in the feedback form, including color, font, border-radius, line height, background color, border, transition, padding, margin, width, box-sizing, and outline */
+    color:rgb(0, 0, 0);
+    font-family:'Times New Roman', Times, serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #bbbbbb;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus {
+    /* Styles for the focused input field in the feedback form, including border */
+    border:2px solid #bbbbbb;
+  }
+  
+  textarea {
+    /* Styles for the textarea in the feedback form, including height, line-height, and resize property */
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    /* Styles for the submit button in the feedback form, including font family, width, background color, border-radius, border, cursor, color, font size, padding top and bottom, transition, margin-top, and font weight */
+    font-family:'Times New Roman', Times, serif;
+    width: 100%;
+    background:#a32c64;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:rgb(255, 255, 255);
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  
+  [type="submit"]:hover {
+    /* Styles for the hover effect on the submit button in the feedback form, including background color */
+    background:#ff9688;
+  }
+  

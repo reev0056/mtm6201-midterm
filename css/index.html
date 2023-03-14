@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Project mtm6201</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav role="navigation" aria-label="Main Navigation">
+        <!-- The 'role' attribute specifies the landmark role of the element.
+             The 'aria-label' attribute provides a label for the landmark. -->
+        <div class="wrapper"></div>
+        <ul role="menu">
+            <!-- The 'role' attribute specifies the role of the element.
+                 In this case, the 'menu' role is used to indicate a list of menu items. -->
+            <li role="menuitem">
+                <a href="index.html" aria-current="page">HOME</a>
+                <!-- The 'role' attribute specifies the role of the element.
+                     In this case, the 'menuitem' role is used to indicate a menu item.
+                     The 'aria-current' attribute is used to indicate the current page. -->
+            </li>
+            <li role="menuitem"><a href="about.html">ABOUT</a></li>
+            <li role="menuitem"><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <div class="wrapper">
+        <div role="heading" aria-level="1">
+            <!-- The 'role' attribute specifies the role of the element.
+                 In this case, the 'heading' role is used to indicate a heading element.
+                 The 'aria-level' attribute is used to indicate the level of the heading. -->
+        <div class="header-text">
+            <h1>Start Your Order!</h1>
+            <p>"Indulge in the sweetness of life with Sweet It bakery"</p>
+        </div>
+        </div>
+    
+            <!-- Home image -->
+        <div class="float-img">
+            <img src="images/pexels-madison-inouye-192933.jpg" alt="bakery">
+            <div class="small-img">
+            <img src="images/pexels-pixabay-221083.jpg" alt="">
+            <img src="images/pexels-pixabay-357627.jpg" alt="">
+            <img src="images/pexels-eric-mufasa-1397309.jpg" alt="">
+        </div>
+        </div>
+
+        <div>
+            <p>We at Sweet It are dedicated to giving our clients access to delectable, premium baked goods whenever and wherever they desire. You can enjoy our tasty items in the comfort of your own home.</p>
+    
+            <p>To make sure that every one of our goods is as tasty as possible, we only use locally obtained, fresh ingredients in their production. </p>
+    
+            <p>Visit our online ordering system and select the things you want to order. To fit your preferences, a range of delivery choices are available, including scheduled delivery and same-day delivery.</p>
+        </div>
+    
+        <button class="order-here" role="button" aria-controls="order-info" aria-describedby="order-info-desc">Order Here</button>
+        <!-- The 'role' attribute specifies the role of the element.
+             In this case, the 'button' role is used to indicate a button element.
+             The 'aria-controls' attribute specifies the element that the button controls or activates.
+             The 'aria-describedby' attribute provides a reference to the description of the button. -->
+    
+    </div>
+    
+    
+
+</body>
+</html>
